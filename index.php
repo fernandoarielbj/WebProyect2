@@ -24,20 +24,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- Background Change -->
   <style type="text/css">
 <!--
-.bodybg {
+.changebg {
   <?php $dayforbackground=date('N'); ?>
-  <?php if ($dayforbackground==1) { ?>background-image: url(img/backLunes.png);<?php } ?>
-  <?php if ($dayforbackground==2) { ?>background-image: url(img/backMartes.jpg);<?php } ?>
-  <?php if ($dayforbackground==3) { ?>background-image: url(img/backMiercoles.jpg);<?php } ?>
-  <?php if ($dayforbackground==4) { ?>background-image: url(img/backJueves.jpg);<?php } ?>
-  <?php if ($dayforbackground==5) { ?>background-image: url(img/backViernes.jpg);<?php } ?>
-  <?php if ($dayforbackground==6) { ?>background-image: url(img/backSabado.jpg);<?php } ?>
-  <?php if ($dayforbackground==7) { ?>background-image: url(img/backDomingo.jpg);<?php } ?>
+  <?php if ($dayforbackground==1) { ?>background-image:url(img/backLunes.png);<?php } ?>
+  <?php if ($dayforbackground==2) { ?>background-image:url(img/backMartes.jpg);<?php } ?>
+  <?php if ($dayforbackground==3) { ?>background-image:url(img/backMiercoles.jpg);<?php } ?>
+  <?php if ($dayforbackground==4) { ?>background-image:url(img/backJueves.jpg);<?php } ?>
+  <?php if ($dayforbackground==5) { ?>background-image:url(img/backViernes.jpg);<?php } ?>
+  <?php if ($dayforbackground==6) { ?>background-image:url(img/backSabado.jpg);<?php } ?>
+  <?php if ($dayforbackground==7) { ?>background-image:url(img/backDomingo.jpg);<?php } ?>
 }
 -->
 </style>
+
   <link rel="stylesheet" type="text/css" href="css/styleMain.css">
 </head>
 
@@ -86,7 +89,7 @@
 
 <!-- HEADER -->
 
-<header class="mainHeader bodybg">
+<header class="mainHeader changebg">
   <div class="logoHeader" align="center">
   <div>
     <img src="img/logo.png" class="img-fluid">
@@ -272,8 +275,9 @@
   </div>
 </footer>
 
-
+<!--
 <button type="button" class="btn btn-secondary botonTurnoFix">Pedir Turno</button>
+-->
 
   <!-- Scripts -->
 
