@@ -79,7 +79,7 @@
         </div>
       </li>
       <li class="nav-item col-md-2">
-        <a class="nav-link active" href="#clubAmigos">Club de Amigos</a>
+        <a class="nav-link active" href="#contactMain">Contacto</a>
       </li> 
       <div class="col-md-1"></div>
     </ul>
@@ -251,7 +251,7 @@
       <p>&copy; Copyright 2018. House of Cut Men.</p>
     </div>
   </div>
-  <div class="col-md-6 contactoForm">
+  <div id="contactMain" class="col-md-6 contactoForm">
     <h3>Contactanos:</h3>
       <form action="recibe.php" method="post" id="form2">
         <div class="camposForm">
