@@ -25,6 +25,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+  <!-- AoS -->
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <!-- Animate CSS-->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
   <!-- Background Change -->
   <style type="text/css">
 <!--
@@ -91,12 +98,12 @@
 
 <header class="mainHeader changebg">
   <div class="logoHeader" align="center">
-  <div>
+  <div data-aos="zoom-out" data-aos-once="true" class="animated bounce delay-2s">
     <img src="img/logo.png" class="img-fluid">
   </div>
   </div>
 
-  <div class="sloganHeader text-center">
+  <div class="sloganHeader text-center" data-aos="zoom-in" data-aos-once="true">
     <h2>#VivíLaExperiencia</h2>
   </div>
 
@@ -126,7 +133,7 @@
 
 
 <section class="row">
-  <article class="container col-md-2 titleNosotros">
+  <article class="container col-md-2 titleNosotros" data-aos="fade-right">
     <h3>NOSOTROS</h3>
   </article>
   <article class="container col-md-4 pictureNosotros">
@@ -152,7 +159,7 @@
 
 
 <section class="row">
-  <div class="container col-md-2 titleHorarios"><h3 id="horariosCopy">HORARIOS</h3></div>
+  <div class="container col-md-2 titleHorarios" data-aos="fade-left"><h3 id="horariosCopy">HORARIOS</h3></div>
    <article class="container col-md-3 textHorarios">
     <h4>Nuestros Horarios</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -166,7 +173,7 @@
   <article class="container col-md-4 pictureHorarios">
     <img src="img/horarios.jpg" class="img-fluid">
   </article>
-  <article class="container col-md-2 titleHorarios">
+  <article class="container col-md-2 titleHorarios" data-aos="fade-left">
     <h3 id="horariosOrig">HORARIOS</h3>
   </article>
 </section>
@@ -178,7 +185,7 @@
 
 
 <section class="row">
-  <article class="container col-md-2 titlePrecios">
+  <article class="container col-md-2 titlePrecios" data-aos="fade-right">
     <h3>PRECIOS</h3>
   </article>
   <article class="container col-md-4 picturePrecios">
@@ -286,13 +293,20 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="js/plugins.js"></script>
+    <!-- Smooth Scroll-->
   <script src="js/main.js"></script>
   <script src="js/jquery.smooth-scroll.min.js"></script>
   <script>
     $('a').smoothScroll();
   </script>
 
-<script>
+  <!-- AoS Script -->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
     //$(document).on("ready", function(){
     $(document).ready(function(){
       //Armar funcion para el envio - enviarDatos
