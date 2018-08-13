@@ -7,11 +7,6 @@
 	</head>
 	<body>
 		<div id="contenedor">
-			<h1>PHP</h1>
-			<div class="cajas">
-				<h3>Recibiendo datos</h3>
-			</div>
-			<div class="cajas">
 				<?php
 
 				//Probando que los datos llegan por medio de Metodo Post
